@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Container } from "./components/Container";
-import TodoList from "./components/Container/TodoList";
+import TodoList from "./components/Container/TodoList/TodoList";
 import TodoPanel from "./components/Container/TodoPanel/TodoPanel";
 
 function App() {

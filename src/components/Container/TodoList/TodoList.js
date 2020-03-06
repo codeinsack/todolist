@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 
-import TodoItem from "./TodoList/TodoItem/TodoItem";
+import TodoItem from "./TodoItem/TodoItem";
 
 class TodoList extends Component {
   render() {
     return (
       <div>
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
+        <TodoItem title="Learn React" />
+        <TodoItem title="Learn Vue" />
+        <TodoItem title="Learn Polymer" />
       </div>
     );
   }

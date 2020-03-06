@@ -1,37 +1,51 @@
 import React, {Component} from 'react';
+import styled from "styled-components";
+
+import RadioButton from "../../../UI/RadioButton/RadioButton";
 
 class FilterBlock extends Component {
   render() {
     return (
-      <div>
-        <label>
-          All
-          <input
-            type="radio"
-            name="completeness"
+      <Wrapper>
+        <RadioBlock>
+          <RadioButton
+            id="all"
+            textLabel="All"
+            groupName="completeness"
             checked
             onChange={() => {}}
           />
-        </label>
-        <label>
-          Completed
-          <input
-            type="radio"
-            name="completeness"
-            onChange={() => {}}
+          <RadioButton
+            id="completed"
+            textLabel="Completed"
+            groupName="completeness"
           />
-        </label>
-        <label>
-          Incompleted
-          <input
-            type="radio"
-            name="completeness"
-            onChange={() => {}}
+          <RadioButton
+            id="uncompleted"
+            textLabel="Uncompleted"
+            groupName="completeness"
           />
-        </label>
-      </div>
+        </RadioBlock>
+        <SearchBlock>
+          <label htmlFor="search">Search</label>
+          <input id="search" type="text"/>
+        </SearchBlock>
+      </Wrapper>
     );
   }
 }
 
 export default FilterBlock;
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+const RadioBlock = styled.div`
+  display: flex;
+`
+
+const SearchBlock = styled.div`
+  display: flex;
+`
