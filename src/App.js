@@ -1,14 +1,12 @@
 import React from 'react';
 
-import { Container } from "./components/Container";
-import TodoList from "./components/Container/TodoList/TodoList";
-import TodoPanel from "./components/Container/TodoPanel/TodoPanel";
+import { Container } from "./components/UI/Container/Container";
+import Dashboard from "./components/Dashboard/Dashboard";
 
 function App() {
   return (
     <Container>
-      <TodoPanel />
-      <TodoList />
+      <Dashboard />
     </Container>
   );
 }
