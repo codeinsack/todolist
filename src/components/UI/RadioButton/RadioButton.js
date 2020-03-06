@@ -6,7 +6,7 @@ class RadioButton extends Component {
     const { id, textLabel, onChange, checked, groupName } = this.props
 
     return (
-      <LabelGroup>
+      <Wrapper>
         <label htmlFor={id}>{textLabel}</label>
         <input
           id={id}
@@ -15,14 +15,14 @@ class RadioButton extends Component {
           checked={checked}
           onChange={onChange}
         />
-      </LabelGroup>
+      </Wrapper>
     );
   }
 }
 
 export default RadioButton;
 
-const LabelGroup = styled.div`
+const Wrapper = styled.div`
   display: flex;
   padding: 5px;
 `

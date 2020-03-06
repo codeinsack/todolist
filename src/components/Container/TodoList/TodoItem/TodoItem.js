@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import styled from 'styled-components'
 
+import {Button} from "../../../UI/Button/Button";
+
 class TodoItem extends Component {
   render() {
     const { title } = this.props
@@ -9,9 +11,9 @@ class TodoItem extends Component {
       <Wrapper>
         {title}
         <ButtonPanel>
-          <button>Toggle</button>
-          <button>Edit</button>
-          <button>Delete</button>
+          <Button type="info">Toggle</Button>
+          <Button type="success">Edit</Button>
+          <Button type="danger">Delete</Button>
         </ButtonPanel>
       </Wrapper>
     );
