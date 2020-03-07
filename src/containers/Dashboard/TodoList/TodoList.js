@@ -4,11 +4,11 @@ import TodoItem from "./TodoItem/TodoItem";
 
 class TodoList extends Component {
   render() {
+    const { todos } = this.props
+
     return (
       <div>
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
+        {todos.map((item) => <TodoItem key={item.id} {...item} />)}
       </div>
     );
   }
