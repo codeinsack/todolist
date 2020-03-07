@@ -1,8 +1,14 @@
 import React from 'react';
 
+import {Container} from "./components/UI/Container/Container";
+import Dashboard from "./containers/Dashboard/Dashboard";
 
 function App() {
-  return <div>Hello World</div>
+  return (
+    <Container>
+      <Dashboard />
+    </Container>
+  )
 }
 
 export default App;
